@@ -1,0 +1,31 @@
+/* ViewApplications.css */
+
+.view-applications-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .view-applications-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .view-applications-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .view-applications-item {
+    margin-bottom: 10px;
+  }
+  
+  .view-applications-item label {
+    font-weight: bold;
+  }
+  
+  .view-applications-item span {
+    margin-left: 10px;
+  }
+  

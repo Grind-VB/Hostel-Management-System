@@ -1,0 +1,48 @@
+/* Programs.css */
+
+.programs {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.programs h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.programs p {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.program-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.program {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.program h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.program ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.program ul li {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}

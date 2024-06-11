@@ -1,0 +1,31 @@
+/* ManageWardens.css */
+
+.manage-wardens-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .manage-wardens-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .manage-wardens-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .manage-wardens-item {
+    margin-bottom: 10px;
+  }
+  
+  .manage-wardens-item label {
+    font-weight: bold;
+  }
+  
+  .manage-wardens-item span {
+    margin-left: 10px;
+  }
+  

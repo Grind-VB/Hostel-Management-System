@@ -1,0 +1,31 @@
+/* AllotmentStatus.css */
+
+.allotment-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .allotment-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .allotment-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .allotment-item {
+    margin-bottom: 10px;
+  }
+  
+  .allotment-item label {
+    font-weight: bold;
+  }
+  
+  .allotment-item span {
+    margin-left: 10px;
+  }
+  

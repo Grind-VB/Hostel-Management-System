@@ -1,0 +1,36 @@
+/* Research.css */
+
+.research {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .research h2 {
+    margin-top: 0;
+  }
+  
+  .research p {
+    margin-bottom: 20px;
+  }
+  
+  .research-areas,
+  .research-projects,
+  .research-facilities,
+  .research-opportunities {
+    margin-bottom: 30px;
+  }
+  
+  .research-areas h3,
+  .research-projects h3,
+  .research-facilities h3,
+  .research-opportunities h3 {
+    margin-top: 0;
+  }
+  
+  .research-areas ul,
+  .research-projects ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  

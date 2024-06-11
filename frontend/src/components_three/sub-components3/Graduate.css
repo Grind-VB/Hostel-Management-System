@@ -1,0 +1,33 @@
+/* Graduate.css */
+
+.graduate {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.graduate h2 {
+  margin-top: 0;
+}
+
+.graduate h3 {
+  margin-top: 20px;
+}
+
+.graduate p {
+  margin-bottom: 20px;
+}
+
+.link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.link:hover {
+  background-color: #0056b3;
+}

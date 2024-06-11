@@ -1,0 +1,49 @@
+/* EventCalendar.css */
+
+.event-calendar {
+    width: 100%;
+  }
+  
+  .fc-header-toolbar {
+    margin-bottom: 20px;
+  }
+  
+  .fc-toolbar-title {
+    font-size: 24px;
+    margin-right: 20px;
+  }
+  
+  .fc-day-header {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .fc-day {
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 100px;
+  }
+  
+  .fc-event {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+  
+  .fc-event:hover {
+    background-color: #0056b3;
+  }
+  
+  .fc-day-today {
+    background-color: #f0f0f0;
+  }
+  
+  .fc-day-selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .fc-day-num {
+    font-size: 16px;
+  }
+  

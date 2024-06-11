@@ -1,0 +1,31 @@
+/* ApprovalStatus.css */
+
+.approval-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .approval-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .approval-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .approval-item {
+    margin-bottom: 10px;
+  }
+  
+  .approval-item label {
+    font-weight: bold;
+  }
+  
+  .approval-item span {
+    margin-left: 10px;
+  }
+  

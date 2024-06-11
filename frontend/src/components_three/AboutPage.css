@@ -1,0 +1,35 @@
+/* AboutPage.css */
+
+.about-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .intro-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .history-section,
+  .mission-section,
+  .values-section {
+    margin-top: 40px;
+  }
+  
+  .history-section h2,
+  .mission-section h2,
+  .values-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .values-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .values-section li {
+    margin-bottom: 10px;
+  }
+  

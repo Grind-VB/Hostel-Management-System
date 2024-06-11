@@ -1,0 +1,47 @@
+/* ImageSlider.css */
+
+.image-slider {
+    width: 100%;
+    margin-bottom: 20px; /* Add some spacing at the bottom */
+  }
+  
+  /* Style for the slider dots */
+  .slick-dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+  }
+  
+  /* Style for individual dot */
+  .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+  }
+  
+  /* Style for active dot */
+  .slick-dots li button {
+    font-size: 10px;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+  
+  /* Style for inactive dot */
+  .slick-dots li button:hover {
+    background: #0056b3;
+  }
+  
+  /* Style for the slider images */
+  .slick-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Add rounded corners to images */
+  }
+  

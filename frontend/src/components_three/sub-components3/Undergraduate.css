@@ -1,0 +1,33 @@
+/* Undergraduate.css */
+
+.undergraduate {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.undergraduate h2 {
+  margin-top: 0;
+}
+
+.undergraduate h3 {
+  margin-top: 20px;
+}
+
+.undergraduate p {
+  margin-bottom: 20px;
+}
+
+.link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.link:hover {
+  background-color: #0056b3;
+}
