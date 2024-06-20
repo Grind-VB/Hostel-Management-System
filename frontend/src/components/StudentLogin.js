@@ -39,7 +39,7 @@ import './StudentLogin.css';
 import React, { useState } from 'react';
 
 function StudentLogin() {
-  const [form, setForm] = useState({ username: '', password: '' });
+  const [form, setForm] = useState({ email: '', password: '' });
   const [error, setError] = useState('');
 
   const handleForm = (e) => {
@@ -51,7 +51,7 @@ function StudentLogin() {
     try {
       const response = await fetch('http://localhost:5000/api/users/login', {
         method: 'POST',
-        body: JSON.stringify({ ...form, role: 'student' }),
+        body: JSON.stringify(form), // Ensure sending 'email' and 'password'
         headers: { 'Content-Type': 'application/json' }
       });
       const data = await response.json();
@@ -59,6 +59,8 @@ function StudentLogin() {
         setError(data.msg);
       } else {
         console.log(data); // Handle successful login
+        localStorage.setItem('token', data.token);
+        // Navigate to dashboard or desired route
       }
     } catch (err) {
       console.error('Error:', err);
@@ -69,10 +71,10 @@ function StudentLogin() {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <label>Username:</label>
-        <input type="text" name="username" onChange={handleForm} />
+        <label>Email:</label>
+        <input type="email" name="email" value={form.email} onChange={handleForm} required />
         <label>Password:</label>
-        <input type="password" name="password" onChange={handleForm} />
+        <input type="password" name="password" value={form.password} onChange={handleForm} required />
         <button type="submit">Login</button>
       </form>
       {error && <p>{error}</p>}

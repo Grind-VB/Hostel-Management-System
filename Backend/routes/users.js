@@ -4,45 +4,7 @@ const jwt = require('jsonwebtoken');
 const router = express.Router();
 const User = require('../models/User');
 
-// @route POST api/users/register
-// @desc Register new user
-// @access Public
-router.post('/register', async (req, res) => {
-  const { email, password } = req.body;
-
-  try {
-    console.log(`Register attempt with Email: ${email}`);
-
-    // Check if user already exists
-    let user = await User.findOne({ email });
-    if (user) {
-      console.log(`User already exists for Email: ${email}`);
-      return res.status(400).json({ msg: 'User already exists' });
-    }
-
-    // Hash the password
-    const salt = await bcrypt.genSalt(10);
-    const hashedPassword = await bcrypt.hash(password, salt);
-
-    // Create a new user
-    const newUser = new User({
-      email,
-      password: hashedPassword
-    });
-
-    // Save the new user to the database
-    await newUser.save();
-
-    console.log(`User registered successfully: ${email}`);
-
-    res.json({ msg: 'User registered successfully' });
-  } catch (err) {
-    console.error(err.message);
-    res.status(500).send('Server error');
-  }
-});
-
-// @route POST api/users/login
+// @route POST /api/users/login
 // @desc Login user and return JWT token
 // @access Public
 router.post('/login', async (req, res) => {
@@ -83,14 +45,14 @@ router.post('/login', async (req, res) => {
     const payload = {
       user: {
         id: user.id,
-        role: user.role
+        email: user.email // You can include more user information in payload if needed
       }
     };
 
     jwt.sign(
       payload,
       'yourJWTSecret', // Replace with your own secret
-      { expiresIn: 3600 },
+      { expiresIn: 3600 }, // Token expires in 1 hour
       (err, token) => {
         if (err) throw err;
         res.json({ token });
